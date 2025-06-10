@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #72baff;
+    --secondary-color: #a3f0c3;
+    --default-border-radius: 12px;
+}
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+h4 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+h5 {
+    font-size: 1rem;
+    margin: 0;
+}
+h6 {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.boxed-container {
+    /* max-width: 1328px; */
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: -130px;
+    padding: 20px 0;
+    z-index: 10;
+}
+header img {
+    width: 200px;
+    height: auto;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+#hero {
+    background-image: url('images/back1.png');
+    background-size: cover;
+    background-position: top;
+    z-index: 3;
+}
+#hero .boxed-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 250px;
+    padding-bottom: 50px;
+}
+.hero-c1 {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hero-c1 h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin: 0;
+}
+.hero-c1 h1 span.gradient-backdrop {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: #fff;
+    padding: 0 8px;
+    border-radius: 6px;
+    display: inline-block;
+}
+.hero-c1 p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #fff
+}
+.whatsapp {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+.whatsapp:hover {
+    transform: scale(1.05);
+}
+.whatsapp::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/whatsapp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.hero-c2 {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-c2 img {
+    width: 100%;
+    height: auto;
+    transform: scale(2.5);
+    margin-bottom: -120px;
+    margin-right: 50px;
+    z-index: 3;
+}
+.absolute-container1 {
+    margin: 0;
+    position: relative;
+}
+.absolute-container1 img {
+    position: absolute;
+    top: -100px;
+    right: 50px;
+    width: 200px;
+    height: auto;
+    z-index: 0;
+}
+
+#beneficios .beneficios-header {
+    text-align: left;
+    margin-bottom: 50px;
+    max-width: 700px;
+}
+.beneficios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.beneficios-card {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.beneficios-card img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+.beneficios-card-texto {
+    display: flex;
+    flex-direction: column;
+}
+.beneficios-card .descrição {
+    margin: 0;
+}
+.beneficios-card p {
+    font-size: 14px;
+    color: #000;
+}
+.beneficios-card .destaque {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.beneficios-card .destaque::after {
+    content: "";
+    display: block;
+    height: 0;
+}
