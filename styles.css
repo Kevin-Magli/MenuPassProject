@@ -667,3 +667,8 @@ footer .whatsapp::before {
     width: 24px;
     height: auto;
 }
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
