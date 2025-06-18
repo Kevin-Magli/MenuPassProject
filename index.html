@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Pass</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    
     <script 
     src="https://beta.leadconnectorhq.com/loader.js"  
     data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js" 
@@ -24,6 +26,9 @@
                 <li><a href="#saber-mais">Saber Mais</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <span></span>
+        </div>
     </header>
     <main>
         <section id="hero">
@@ -77,9 +82,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-totem">
-                    <img class="tablet-image" src="images/tablet.png" alt="Totem Image" />
-                    <div class="totem-content">
+                <div class="container-tablet">
+                    <img class="tablet-image" src="images/tablet.png" alt="Teblet Image" />
+                    <div class="tablet-content">
                         <p>Totem web <br>compatível com tablets e PCs Touch</p>
                         <button class="cta-button">Quero saber mais</button>
                         <span class="big-dash" style="letter-spacing: -4px;">&mdash;&mdash;&mdash;</span>
@@ -231,7 +236,7 @@
                 </div>
                 <div class="testemunhos-cards">
                     <div class="testemunho-card">
-                        <img src="https://placehold.co/80x80?text=User+1" alt="User 1" />
+                        <img src="images/foto.png" alt="User 1" />
                         <div class="testemunho-info">
                             <h3>Rafaela Aleixo</h3>
                             <h4>(Colégio Universo Floripa)</h4>
@@ -242,7 +247,7 @@
                         <p>"Os alunos amaram e nós também! Muita rapidez, agilidade em todo o processo! <br><br>Até os mais céticos tiveram que dar o braço a torcer."</p>
                     </div>
                     <div class="testemunho-card">
-                        <img src="https://placehold.co/80x80?text=User+1" alt="User 2" />
+                        <img src="images/foto2.png" alt="User 2" />
                         <div class="testemunho-info">
                             <h3>Thaís Botella</h3>
                             <h4>(Cantina Nutribear na Maple Bear)</h4>
@@ -253,7 +258,7 @@
                         <p>"Com o MenuPass, a frequência de compras dos alunos da Nutribear aumentou, impulsionando nosso faturamento em 40%.<br><br>A solução simplificou as operações e melhorou a experiência dos pais e alunos."</p>
                     </div>
                     <div class="testemunho-card">
-                        <img src="https://placehold.co/80x80?text=User+1" alt="User 3" />
+                        <img src="images/foto3.png" alt="User 3" />
                         <div class="testemunho-info">
                             <h3>Natalia Lima</h3>
                             <h4>(mãe da Maria Eduarda)</h4>
@@ -308,42 +313,39 @@
         </div>
         <div class="footer-links">
             <a href="#"><img src="images/logo2.png" alt="MenuPass Logo"></a>
-            <div>
-                <ul class="footer-list-itens">
-                    <div>
-                        <li>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                <rect x="5" y="2" width="14" height="20" rx="3" stroke="#000" stroke-width="2" fill="none"/>
-                                <rect x="9" y="18" width="6" height="2" rx="1" fill="#000"/>
-                            </svg>
-                            <span>(11)2292-7985</span>
-                        </li>
-                        <li>
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:24px;height:24px;vertical-align:middle;fill:#25D366;" />
-                            <span>(11)95042-7353</span>
-                        </li>
+            <div class="footer-contacts">
+                <div class="footer-contact-group">
+                    <div class="footer-contact-item">
+                        <img src="images/cellphone-svgrepo-com.svg" alt="phone icon" class="footer-icon" />
+                        <span class="footer-contact-text">(11)2292-7985</span>
                     </div>
-                    <div>
-                    <li>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="2" fill="none"/>
-                            <ellipse cx="12" cy="12" rx="6" ry="10" stroke="#000" stroke-width="2" fill="none"/>
-                            <line x1="2" y1="12" x2="22" y2="12" stroke="#000" stroke-width="2"/>
-                            <line x1="12" y1="2" x2="12" y2="22" stroke="#000" stroke-width="2"/>
-                        </svg>
-                        <span>menupass.com.br</span>
-                    </li>
-                    <li>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <rect x="2" y="4" width="20" height="16" rx="3" stroke="#000" stroke-width="2" fill="none"/>
-                            <polyline points="2,4 12,14 22,4" stroke="#000" stroke-width="2" fill="none"/>
-                        </svg>
-                        <span>contato@menupass.com.br</span>
-                    </li>
+                    <div class="footer-contact-item">
+                        <img src="images/globe-svgrepo-com.svg" alt="globe icon" class="footer-icon" />
+                        <span class="footer-contact-text">menupass.com.br</span>
                     </div>
-                </ul>
+                </div>
+                <div class="footer-contact-group">
+                    <div class="footer-contact-item">
+                        <img src="images/whatsapp-svgrepo-com.svg" alt="WhatsApp" class="footer-icon" />
+                        <span class="footer-contact-text">(11)95042-7353</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="images/mail-alt-svgrepo-com.svg" alt="mail icon" class="footer-icon" />
+                        <span class="footer-contact-text">contato@menupass.com.br</span>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+    <script>
+        // Seleciona o botão hambúrguer e o menu de navegação
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        // Adiciona o evento de clique para abrir/fechar o menu
+        hamburger.addEventListener('click', function() {
+            nav.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,338 @@
+/* Tablet (até 900px) */
+@media (max-width: 900px) {
+    header img {
+        width: 150px;
+        height: auto;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    .beneficios-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .beneficios-card {
+        width: 90%;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-totem {
+        margin-left: -250px;
+    }
+    .cta-section .cta-right {
+        max-width: 60%;
+    }
+    .second-cta .cta-left {
+        max-width: 60%;
+    }
+
+}
+
+/* Mobile (até 600px) */
+@media (max-width: 600px) {
+    header img {
+        width: 180px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 10px;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(20px) saturate(180%) brightness(1.1);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        box-shadow: -8px 0 32px rgba(0,0,0,0.12);
+        border-radius: 30px 0 0 30px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+    }
+    nav a, nav ul li {
+        color: #333 !important;
+    }
+    nav ul {
+        margin-left: -20px;
+    }
+    nav a::before {
+        content: "\2022";
+        color: #333;
+        margin-right: 6px;
+        font-size: 1em;
+        vertical-align: middle;
+    }
+
+    nav.open {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    .hamburger span,
+    .hamburger span:before,
+    .hamburger span:after {
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 4px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        border-radius: 2px;
+        transition: all 0.3s;
+        content: '';
+    }
+
+    .hamburger span {
+        top: 14px;
+        left: 0;
+    }
+
+    .hamburger span:before {
+        top: -10px;
+        left: 0;
+    }
+
+    .hamburger span:after {
+        top: 10px;
+        left: 0;
+    }
+
+    nav.open ~ .hamburger span {
+        background: transparent;
+    }
+
+    nav.open ~ .hamburger span:before {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    nav.open ~ .hamburger span:after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    nav {
+        visibility: hidden;
+        pointer-events: none;
+    }
+    nav.open {
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            display: flex;
+        }
+    }
+    #hero .boxed-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        z-index: 9;
+    }
+    .hero-c1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-c1 button {
+        z-index: 99;
+        margin-top: 100px;
+    }
+    .hero-c2 img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0;
+        margin-top: -130px;
+        z-index: 0;
+    }
+    .absolute-container1 img {
+        left: -100px;
+        z-index: 0;
+    }
+    #beneficios .boxed-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #beneficios .beneficios-header {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .beneficios-header h2, .beneficios-header p {
+        text-align: center;
+        z-index: 2;
+    }
+    .beneficios-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .beneficios-card img {
+        width: 400px;
+        height: auto;
+        margin-left: 30px;
+    }
+    .container-tablet {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .tablet-content {
+        width: 100%;
+        max-width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .big-dash {
+        top: unset;
+        bottom: -40px;
+        right: 50%;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+        margin: 0;
+        font-weight: bold;
+    }
+    .tablet-image {
+        margin-top: 70px;
+    }
+    .cta-section .boxed-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cta-section .cta-right {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    #diferenciais {
+        margin-bottom: 100px
+    }
+    .absolute-container2 {
+        top: 0;
+        z-index: -1;
+    }
+    .cta-wide-section .boxed-container img {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        transform: scale(1.5);
+        margin-top: -100px;
+    }
+    .video-section .boxed-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .video-benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .video-benefit-item {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .second-cta .boxed-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .second-cta .cta-left {
+        max-width: 90%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-header {
+        max-width: 90%;
+        text-align: center;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+    .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        text-align: center;
+        gap: 0;
+    }
+    .footer-contact-item {
+        gap: 10px;
+    }
+    
+}
+@media (max-width: 320px) {
+    html {
+        font-size: 80%;
+    }
+}
