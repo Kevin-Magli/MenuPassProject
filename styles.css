@@ -5,6 +5,8 @@
     --secondary-color: #a3f0c3;
     --default-border-radius: 12px;
 }
+
+
 html, body {
     width: 100vw;
     max-width: 100vw;
@@ -92,7 +94,7 @@ nav ul li a {
 .floating-top-btn {
     position: fixed;
     bottom: 30px;
-    left: 20px;
+    left: 30px;
     z-index: 9999;
     background: #fff;
     color: #333;
@@ -186,7 +188,7 @@ nav ul li a {
 .hero-c2 img {
     width: 100%;
     height: auto;
-    transform: scale(2.5);
+    /* transform: scale(2.5); */
     margin-bottom: -120px;
     margin-right: 50px;
     z-index: 3;
@@ -195,6 +197,7 @@ nav ul li a {
 .absolute-container1 {
     margin: 0;
     position: relative;
+    overflow-x: hidden;
 }
 .absolute-container1 img {
     position: absolute;
@@ -419,6 +422,7 @@ nav ul li a {
 .absolute-container2 {
     margin: 0;
     position: relative;
+    overflow-x: hidden;
 }
 .absolute-container2 img {
     position: absolute;
