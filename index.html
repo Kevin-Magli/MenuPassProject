@@ -45,8 +45,8 @@
                 <div class="hero-c1">
                     <h1><span class="gradient-backdrop">Transforme</span> a cantina da sua escola.</h1>
                     <p>A MenuPass não é só um sistema &mdash; <br>é a solução completa que a <b><br>sua cantina precisa!</b></p>
-                    <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
-                        <button class="whatsapp">Fale com a gente!</button>
+                    <a href="#saber-mais"  rel="noopener noreferrer">
+                        <button class="whatsapp">Fale Conosco</button>
                     </a>
                 </div>
                 <div class="hero-c2">
@@ -97,7 +97,7 @@
                     <img class="tablet-image" src="images/tablet.webp" alt="Teblet Image" />
                     <div class="tablet-content">
                         <p>Totem web <br>compatível com tablets e PCs Touch</p>
-                        <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
+                        <a href="#saber-mais"  rel="noopener noreferrer">
                             <button class="cta-button">Quero saber mais</button>
                         </a>
                         <span class="big-dash" style="letter-spacing: -4px;">&mdash;&mdash;&mdash;</span>
@@ -108,8 +108,8 @@
         <section class="cta-section">
             <div class="boxed-container">
                 <div class="cta-left">
-                    <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
-                        <button class="cta-button">Experimente agora.</button>
+                    <a href="#saber-mais"  rel="noopener noreferrer">
+                        <button class="cta-button">Experimente agora</button>
                     </a>
                 </div>
                 <div class="cta-right">
@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div class="diferenciais-cta">
-                    <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
+                    <a href="#saber-mais"  rel="noopener noreferrer">
                         <button class="cta-button">Quero saber mais</button>
                     </a>
                 </div>
@@ -192,9 +192,9 @@
                 <div class="cta-wide-content">
                     <p class="cta-wide-text1">A MenuPass já está ajudando escolas a otimizarem tempo, reduzirem custos e melhorarem a experiência dos alunos e famílias.</p>
                     <p class="cta-wide-text2">A próxima pode ser a sua.</p>
-                    <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
+                    <a href="#saber-mais"  rel="noopener noreferrer">
                         <button class="whatsapp cta-wide-btn">
-                            Fale com a gente!
+                            Fale Conosco
                         </button>
                     </a>
                 </div>
@@ -233,7 +233,7 @@
                             <span>E com muita tecnologia!</span>
                         </div>
                     </div>
-                    <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
+                    <a href="#saber-mais"  rel="noopener noreferrer">
                         <button class="cta-button video-btn">Experimente agora</button>
                     </a>
                 </div>
@@ -245,7 +245,7 @@
                     <h2>O futuro da cantina escolar começou &mdash; Tecnologia que simplifica, conecta e transforma a experiência na cantina escolar.</h2>
                 </div>
                 <div class="cta-right">
-                    <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
+                    <a href="#saber-mais"  rel="noopener noreferrer">
                         <button class="cta-button">Fale conosco</button>
                     </a>
                 </div>
@@ -331,9 +331,9 @@
     <footer>
         <div class="footer-header">
             <h2>Vamos transformar juntos a <br>experiência da cantina na sua escola.</h2>
-            <a href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">
+            <a href="#saber-mais"  rel="noopener noreferrer">
                 <button class="whatsapp">
-                    Fale com a gente!
+                    Fale Conosco
                 </button>
             </a>
         </div>
@@ -353,7 +353,7 @@
                 <div class="footer-contact-group">
                     <div class="footer-contact-item">
                         <img src="images/whatsapp-svgrepo-com.svg" alt="WhatsApp" class="footer-icon" />
-                        <a class="footer-contact-text" href="https://wa.me/5511950427353" target="_blank" rel="noopener noreferrer">(11) 95042-7353</a>
+                        <a class="footer-contact-text" href="https://wa.me/5511950427353"  rel="noopener noreferrer">(11) 95042-7353</a>
                     </div>
                     <div class="footer-contact-item">
                         <img src="images/mail-alt-svgrepo-com.svg" alt="mail icon" class="footer-icon" />
@@ -364,13 +364,21 @@
         </div>
     </footer>
     <script>
-        // Seleciona o botão hambúrguer e o menu de navegação
+        // Adicione isso ao seu JS para controlar a classe no body
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('nav');
 
-        // Adiciona o evento de clique para abrir/fechar o menu
-        hamburger.addEventListener('click', function() {
-            nav.classList.toggle('open');
+        hamburger.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        document.body.classList.toggle('menu-open', nav.classList.contains('open'));
+        });
+        window.addEventListener('scroll', () => {
+        const hamburger = document.querySelector('.hamburger');
+        if (window.scrollY > 10) {
+            hamburger.classList.add('scrolled');
+        } else {
+            hamburger.classList.remove('scrolled');
+        }
         });
     </script>
 </body>
