@@ -118,7 +118,7 @@ nav ul li a {
 }
 /* HERO SECTION */
 #hero {
-    background-image: url('images/back1.webp');
+    background-image: url('images/back1-squooshed.webp');
     background-size: cover;
     background-position: top;
     z-index: 3;
